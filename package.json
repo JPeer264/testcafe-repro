@@ -1,0 +1,19 @@
+{
+  "name": "repro-test-cafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome test.ts",
+    "start": "npm run start:first & npm run start:second",
+    "start:first": "parcel index.html  -p 1235",
+    "start:second": "parcel iframe.html -p 1234"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2",
+    "testcafe": "^1.14.2"
+  },
+  "dependencies": {}
+}
